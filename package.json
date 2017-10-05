@@ -1,0 +1,28 @@
+{
+  "name": "uz-request-maker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "concurrently --names \"HTTP,WATCH\" -c \"bgBlue.bold,bgMagenta.bold\" \"nodemon --exec ts-node -- ./src/index.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/moment-timezone": "^0.2.34",
+    "@types/mongodb": "^2.2.9",
+    "@types/node": "^8.0.1",
+    "@types/request-promise": "^4.1.36"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "moment-timezone": "^0.5.13",
+    "mongodb": "^2.2.30",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "ts-node": "^3.2.0",
+    "typescript": "^2.4.2"
+  }
+}

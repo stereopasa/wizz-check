@@ -1,0 +1,109 @@
+{
+    "value": [
+        {
+            "num": "094Ш",
+            "model": 0,
+            "category": 0,
+            "travel_time": "9:54",
+            "from": {
+                "station": "Одесса-Главная",
+                "date": 1503837720,
+                "src_date": "2017-08-27 15:42:00"
+            },
+            "till": {
+                "station": "Минск-Пассажирский",
+                "date": 1503873360,
+                "src_date": "2017-08-28 01:36:00"
+            },
+            "types": [
+                {
+                    "id": "К",
+                    "title": "Купе",
+                    "letter": "К",
+                    "places": 13
+                },
+                {
+                    "id": "П",
+                    "title": "Плацкарт",
+                    "letter": "П",
+                    "places": 14
+                }
+            ],
+            "allow_stud": 1,
+            "allow_transportation": 1,
+            "allow_booking": 1,
+            "allow_roundtrip": 1
+        },
+        {
+            "num": "148Ш",
+            "model": 0,
+            "category": 0,
+            "travel_time": "12:56",
+            "from": {
+                "station": "Одесса-Главная",
+                "date": 1503859080,
+                "src_date": "2017-08-27 21:38:00"
+            },
+            "till": {
+                "station": "Киев-Пассажирский",
+                "date": 1503905640,
+                "src_date": "2017-08-28 10:34:00"
+            },
+            "types": [
+                {
+                    "id": "Л",
+                    "title": "Люкс",
+                    "letter": "Л",
+                    "places": 1
+                },
+                {
+                    "id": "К",
+                    "title": "Купе",
+                    "letter": "К",
+                    "places": 2
+                }
+            ],
+            "allow_stud": 1,
+            "allow_transportation": 1,
+            "allow_booking": 1,
+            "allow_roundtrip": 1
+        },
+        {
+            "num": "106Ш",
+            "model": 0,
+            "category": 0,
+            "travel_time": "8:45",
+            "from": {
+                "station": "Одесса-Главная",
+                "date": 1503861900,
+                "src_date": "2017-08-27 22:25:00"
+            },
+            "till": {
+                "station": "Киев-Пассажирский",
+                "date": 1503893400,
+                "src_date": "2017-08-28 07:10:00"
+            },
+            "types": [
+                {
+                    "id": "Л",
+                    "title": "Люкс",
+                    "letter": "Л",
+                    "places": 14
+                },
+                {
+                    "id": "К",
+                    "title": "Купе",
+                    "letter": "К",
+                    "places": 9
+                }
+            ],
+            "allow_stud": 1,
+            "allow_transportation": 1,
+            "allow_booking": 1,
+            "allow_roundtrip": 1
+        }
+    ],
+    "error": null,
+    "data": null,
+    "captcha": null
+}
