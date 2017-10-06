@@ -1,5 +1,6 @@
 import { cities } from "./data";
 import * as rp from "request-promise";
+import { sprintf } from "sprintf-js";
 import * as DateUtils from "../../utils/DateUtils";
 
 export class WizzCheck {
@@ -8,13 +9,11 @@ export class WizzCheck {
   private static DEPARTURE_STATION = "KTW";
 
   async check() {
-    const citiesMapping = cities.reduce(
-      (accumulator, city) => Object.assign(accumulator, { [city.iata]: city }),
-      {}
-    );
-    const departureCity = cities.find(
-      city => city.iata === WizzCheck.DEPARTURE_STATION
-    );
+    const citiesMapping = cities.reduce((accumulator, city) => Object.assign(
+          accumulator,
+          { [city.iata]: city }
+        ), {});
+    const departureCity = cities.find(city => city.iata === WizzCheck.DEPARTURE_STATION);
 
     await departureCity.connections
       .reduce((promise, connection) => {
@@ -23,17 +22,11 @@ export class WizzCheck {
           .catch(e => console.log("error: " + connection.iata));
       }, Promise.resolve([]))
       .then((result: any[]) => {
-        result = result.filter(e => e.price && e.priceType != "soldOut");
-        result.sort(
-          (a, b) =>
-            a.price.amount != b.price.amount
-              ? a.price.amount - b.price.amount
-              : new Date(a.departureDate).getTime() - new Date(b.departureDate).getTime()
-        );
+        result = result.filter(e => e.price && e.priceType !== "soldOut");
+        result.sort((a, b) => (a.price.amount != b.price.amount ? a.price.amount - b.price.amount : new Date(a.departureDate).getTime() - new Date(b.departureDate).getTime()));
         result.forEach(data => {
-          console.log(
-            `${data.departureStation}-${data.arrivalStation} (${citiesMapping[data.arrivalStation].shortName} [${citiesMapping[data.arrivalStation].countryCode}]) : ${data.price.amount} ${data.price.currencyCode} (${data.departureDate})`
-          );
+          let formatted = sprintf("%5d %s (%s) : %s -> %s (%s [%s])", data.price.amount, data.price.currencyCode, DateUtils.dateFromISO(data.departureDate), data.departureStation, data.arrivalStation, citiesMapping[data.arrivalStation].shortName, citiesMapping[data.arrivalStation].countryCode);
+          console.log(formatted);
         });
       })
       .catch(e => console.log(e));

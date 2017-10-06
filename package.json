@@ -1,5 +1,5 @@
 {
-  "name": "uz-request-maker",
+  "name": "wizz-check",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,7 +14,8 @@
     "@types/moment-timezone": "^0.2.34",
     "@types/mongodb": "^2.2.9",
     "@types/node": "^8.0.1",
-    "@types/request-promise": "^4.1.36"
+    "@types/request-promise": "^4.1.36",
+    "@types/sprintf-js": "^1.1.0"
   },
   "dependencies": {
     "dotenv": "^4.0.0",
@@ -22,6 +23,7 @@
     "mongodb": "^2.2.30",
     "request": "^2.81.0",
     "request-promise": "^4.2.1",
+    "sprintf-js": "^1.1.1",
     "ts-node": "^3.2.0",
     "typescript": "^2.4.2"
   }
