@@ -4,15 +4,26 @@ import * as DateUtils from "../../utils/DateUtils";
 
 export class WizzCheck {
   private static TARGET_DATE_FROM: Date = new Date(2017, 9, 9);
-  private static TARGET_DATE_TO: Date = new Date(2018, 9, 13);
+  private static TARGET_DATE_TO: Date = new Date(2017, 9, 14);
   private static DEPARTURE_STATION = "KTW";
 
   check() {
-    let city = cities.find(element => element.iata === WizzCheck.DEPARTURE_STATION);
+    const citiesMapping = cities.reduce((accumulator, city) => {
+      accumulator[city.iata] = city;
+      return accumulator;
+    }, {});
+    const city = cities.find(element => element.iata === WizzCheck.DEPARTURE_STATION);
 
-    let tempConnection = ["AGA", "AHO"];
-    // city.connections.reduce((promise, connection) =>
-    tempConnection.reduce((promise, connection: any) =>
+    // let tempConnection = ["AGA", "AHO"];
+    let tempConnection = [{
+      "iata": "ACE",
+      "operationStartDate": "2017-10-12T00:00:00",
+      "rescueEndDate": "2017-10-05T09:49:54.5653349+01:00",
+      "isDomestic": false
+    }];
+
+    // tempConnection.reduce((promise, connection: any) =>
+    city.connections.reduce((promise, connection) =>
       promise.then((result: any[]) => {
         let options = this.createOptions(
           WizzCheck.DEPARTURE_STATION,
@@ -30,9 +41,13 @@ export class WizzCheck {
       .then((result: any[]) => {
         result.sort((a, b) => parseFloat(a.price.amount) - parseFloat(b.price.amount));
         result.forEach(data => {
-          console.log(data.departureStation + "-" + data.arrivalStation + ": " + data.price.amount);
+          console.log(data.departureStation + "-" + data.arrivalStation
+            + "[" + citiesMapping[data.arrivalStation].shortName + "]"
+            + ": " + data.price.amount
+            + " (" + data.departureDate + ")");
         })
-      });
+      })
+      .catch(e => console.log(e));
   }
 
   async sendRequest(options: any) {
