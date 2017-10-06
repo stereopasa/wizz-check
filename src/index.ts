@@ -8,7 +8,11 @@ dotenv.load();
 console.log("*** STARTING ***");
 console.log(new Date().toLocaleString());
 
-new WizzCheck().check();
+new WizzCheck().check()
+  .then(() => {
+    console.log("*** END ***")
+    console.log(new Date().toLocaleString());
+  });
 
 // listen for TERM signal .e.g. kill
 process.on("SIGTERM", gracefulShutdown);

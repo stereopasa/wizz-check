@@ -7,53 +7,49 @@ export class WizzCheck {
   private static TARGET_DATE_TO: Date = new Date(2017, 9, 14);
   private static DEPARTURE_STATION = "KTW";
 
-  check() {
-    const citiesMapping = cities.reduce((accumulator, city) => {
-      accumulator[city.iata] = city;
-      return accumulator;
-    }, {});
-    const city = cities.find(element => element.iata === WizzCheck.DEPARTURE_STATION);
+  async check() {
+    const citiesMapping = cities.reduce(
+      (accumulator, city) => Object.assign(accumulator, { [city.iata]: city }),
+      {}
+    );
+    const departureCity = cities.find(
+      city => city.iata === WizzCheck.DEPARTURE_STATION
+    );
 
-    // let tempConnection = ["AGA", "AHO"];
-    let tempConnection = [{
-      "iata": "ACE",
-      "operationStartDate": "2017-10-12T00:00:00",
-      "rescueEndDate": "2017-10-05T09:49:54.5653349+01:00",
-      "isDomestic": false
-    }];
-
-    // tempConnection.reduce((promise, connection: any) =>
-    city.connections.reduce((promise, connection) =>
-      promise.then((result: any[]) => {
-        let options = this.createOptions(
-          WizzCheck.DEPARTURE_STATION,
-          connection.iata,
-          DateUtils.toWizzTime(WizzCheck.TARGET_DATE_FROM),
-          DateUtils.toWizzTime(WizzCheck.TARGET_DATE_TO)
-        );
-        return rp(options)
-          .then(data => {
-            let filtered = this.handleResponse(data);
-            return result.concat(filtered);
-          })
-      }),
-      Promise.resolve([]))
+    await departureCity.connections
+      .reduce((promise, connection) => {
+        return promise
+          .then(result => this.sendRequest(connection, result))
+          .catch(e => console.log("error: " + connection.iata));
+      }, Promise.resolve([]))
       .then((result: any[]) => {
-        result.sort((a, b) => parseFloat(a.price.amount) - parseFloat(b.price.amount));
+        result = result.filter(e => e.price && e.priceType != "soldOut");
+        result.sort(
+          (a, b) =>
+            a.price.amount != b.price.amount
+              ? a.price.amount - b.price.amount
+              : new Date(a.departureDate).getTime() - new Date(b.departureDate).getTime()
+        );
         result.forEach(data => {
-          console.log(data.departureStation + "-" + data.arrivalStation
-            + "[" + citiesMapping[data.arrivalStation].shortName + "]"
-            + ": " + data.price.amount
-            + " (" + data.departureDate + ")");
-        })
+          console.log(
+            `${data.departureStation}-${data.arrivalStation} (${citiesMapping[data.arrivalStation].shortName} [${citiesMapping[data.arrivalStation].countryCode}]) : ${data.price.amount} ${data.price.currencyCode} (${data.departureDate})`
+          );
+        });
       })
       .catch(e => console.log(e));
   }
 
-  async sendRequest(options: any) {
-    await rp(options)
+  async sendRequest(connection: any, resultAccumulator) {
+    let options = this.createOptions(
+      WizzCheck.DEPARTURE_STATION,
+      connection.iata,
+      DateUtils.toWizzTime(WizzCheck.TARGET_DATE_FROM),
+      DateUtils.toWizzTime(WizzCheck.TARGET_DATE_TO)
+    );
+    return await rp(options)
       .then(data => {
-        let res = this.handleResponse(data);
+        let filtered = this.handleResponse(data);
+        return resultAccumulator.concat(filtered);
       })
       .catch(err => console.log(err));
   }
@@ -62,7 +58,10 @@ export class WizzCheck {
     let result = [];
     for (let flightData of data.outboundFlights) {
       let departureDate = new Date(flightData.departureDate);
-      if (departureDate >= WizzCheck.TARGET_DATE_FROM && departureDate <= WizzCheck.TARGET_DATE_TO) {
+      if (
+        departureDate >= WizzCheck.TARGET_DATE_FROM &&
+        departureDate <= WizzCheck.TARGET_DATE_TO
+      ) {
         result.push(flightData);
       }
     }
@@ -91,9 +90,14 @@ export class WizzCheck {
       },
       headers: {
         "accept-language": "en-US,en;q=0.8,ru;q=0.6",
-        "origin": "https://wizzair.com",
-        "referer": "https://wizzair.com/en-gb/flights/timetable/" + departureStation + "/" + arrivalStation,
-        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+        origin: "https://wizzair.com",
+        referer:
+          "https://wizzair.com/en-gb/flights/timetable/" +
+          departureStation +
+          "/" +
+          arrivalStation,
+        "user-agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
       },
       json: true
     };
