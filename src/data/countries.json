@@ -1,0 +1,515 @@
+{
+  "countries": [
+    { "code": "AF", "name": "Afghanistan", "isEu": false, "isSchengen": false },
+    {
+      "code": "AX",
+      "name": "Åland Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "AL", "name": "Albania", "isEu": false, "isSchengen": false },
+    { "code": "DZ", "name": "Algeria", "isEu": false, "isSchengen": false },
+    {
+      "code": "AS",
+      "name": "American Samoa",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "AD", "name": "Andorra", "isEu": false, "isSchengen": false },
+    { "code": "AO", "name": "Angola", "isEu": false, "isSchengen": false },
+    { "code": "AI", "name": "Anguilla", "isEu": false, "isSchengen": false },
+    { "code": "AQ", "name": "Antarctica", "isEu": false, "isSchengen": false },
+    {
+      "code": "AG",
+      "name": "Antigua and Barbuda",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "AR", "name": "Argentina", "isEu": false, "isSchengen": false },
+    { "code": "AM", "name": "Armenia", "isEu": false, "isSchengen": false },
+    { "code": "AW", "name": "Aruba", "isEu": false, "isSchengen": false },
+    { "code": "AU", "name": "Australia", "isEu": false, "isSchengen": false },
+    { "code": "AT", "name": "Austria", "isEu": true, "isSchengen": true },
+    { "code": "AZ", "name": "Azerbaijan", "isEu": false, "isSchengen": false },
+    { "code": "BS", "name": "Bahamas", "isEu": false, "isSchengen": false },
+    { "code": "BH", "name": "Bahrain", "isEu": false, "isSchengen": false },
+    { "code": "BD", "name": "Bangladesh", "isEu": false, "isSchengen": false },
+    { "code": "BB", "name": "Barbados", "isEu": false, "isSchengen": false },
+    { "code": "BY", "name": "Belarus", "isEu": false, "isSchengen": false },
+    { "code": "BE", "name": "Belgium", "isEu": true, "isSchengen": true },
+    { "code": "BZ", "name": "Belize", "isEu": false, "isSchengen": false },
+    { "code": "BJ", "name": "Benin", "isEu": false, "isSchengen": false },
+    { "code": "BM", "name": "Bermuda", "isEu": false, "isSchengen": false },
+    { "code": "BT", "name": "Bhutan", "isEu": false, "isSchengen": false },
+    { "code": "BO", "name": "Bolivia", "isEu": false, "isSchengen": false },
+    {
+      "code": "BA",
+      "name": "Bosnia and Herzegovina",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "BW", "name": "Botswana", "isEu": false, "isSchengen": false },
+    { "code": "BR", "name": "Brazil", "isEu": false, "isSchengen": false },
+    { "code": "BN", "name": "Brunei", "isEu": false, "isSchengen": false },
+    { "code": "BG", "name": "Bulgaria", "isEu": true, "isSchengen": false },
+    {
+      "code": "BF",
+      "name": "Burkina Faso",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "BI", "name": "Burundi", "isEu": false, "isSchengen": false },
+    { "code": "KH", "name": "Cambodia", "isEu": false, "isSchengen": false },
+    { "code": "CM", "name": "Cameroon", "isEu": false, "isSchengen": false },
+    { "code": "CA", "name": "Canada", "isEu": false, "isSchengen": false },
+    { "code": "CV", "name": "Cape Verde", "isEu": false, "isSchengen": false },
+    {
+      "code": "KY",
+      "name": "Cayman Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "CF",
+      "name": "Central African Republic",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "TD", "name": "Chad", "isEu": false, "isSchengen": false },
+    { "code": "CL", "name": "Chile", "isEu": false, "isSchengen": false },
+    { "code": "CN", "name": "China", "isEu": false, "isSchengen": false },
+    {
+      "code": "CX",
+      "name": "Christmas Island",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "CC",
+      "name": "Cocos (Keeling) Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "CO", "name": "Colombia", "isEu": false, "isSchengen": false },
+    { "code": "KM", "name": "Comoros", "isEu": false, "isSchengen": false },
+    { "code": "CG", "name": "Congo", "isEu": false, "isSchengen": false },
+    {
+      "code": "CD",
+      "name": "Congo, Democratic Republic of",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "CK",
+      "name": "Cook Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "CR", "name": "Costa Rica", "isEu": false, "isSchengen": false },
+    {
+      "code": "CI",
+      "name": "Côte d´Ivoire",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "HR", "name": "Croatia", "isEu": true, "isSchengen": false },
+    { "code": "CU", "name": "Cuba", "isEu": false, "isSchengen": false },
+    { "code": "CY", "name": "Cyprus", "isEu": true, "isSchengen": false },
+    {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "isEu": true,
+      "isSchengen": true
+    },
+    { "code": "DK", "name": "Denmark", "isEu": true, "isSchengen": true },
+    { "code": "DJ", "name": "Djibouti", "isEu": false, "isSchengen": false },
+    { "code": "DM", "name": "Dominica", "isEu": false, "isSchengen": false },
+    {
+      "code": "DO",
+      "name": "Dominican Republic",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "EC", "name": "Ecuador", "isEu": false, "isSchengen": false },
+    { "code": "EG", "name": "Egypt", "isEu": false, "isSchengen": false },
+    { "code": "SV", "name": "El Salvador", "isEu": false, "isSchengen": false },
+    {
+      "code": "GQ",
+      "name": "Equatorial Guinea",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "ER", "name": "Eritrea", "isEu": false, "isSchengen": false },
+    { "code": "EE", "name": "Estonia", "isEu": true, "isSchengen": true },
+    { "code": "ET", "name": "Ethiopia", "isEu": false, "isSchengen": false },
+    {
+      "code": "FK",
+      "name": "Falkland Islands (Malvinas)",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "FJ", "name": "Fiji", "isEu": false, "isSchengen": false },
+    { "code": "FI", "name": "Finland", "isEu": true, "isSchengen": true },
+    { "code": "FR", "name": "France", "isEu": true, "isSchengen": true },
+    {
+      "code": "GF",
+      "name": "French Guiana",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "PF",
+      "name": "French Polynesia",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "GA", "name": "Gabon", "isEu": false, "isSchengen": false },
+    { "code": "GM", "name": "Gambia", "isEu": false, "isSchengen": false },
+    { "code": "GE", "name": "Georgia", "isEu": false, "isSchengen": false },
+    { "code": "DE", "name": "Germany", "isEu": true, "isSchengen": true },
+    { "code": "GH", "name": "Ghana", "isEu": false, "isSchengen": false },
+    { "code": "GI", "name": "Gibraltar", "isEu": false, "isSchengen": false },
+    { "code": "GR", "name": "Greece", "isEu": true, "isSchengen": true },
+    { "code": "GL", "name": "Greenland", "isEu": false, "isSchengen": false },
+    { "code": "GD", "name": "Grenada", "isEu": false, "isSchengen": false },
+    { "code": "GP", "name": "Guadeloupe", "isEu": false, "isSchengen": false },
+    { "code": "GU", "name": "Guam", "isEu": false, "isSchengen": false },
+    { "code": "GT", "name": "Guatemala", "isEu": false, "isSchengen": false },
+    { "code": "GN", "name": "Guinea", "isEu": false, "isSchengen": false },
+    {
+      "code": "GW",
+      "name": "Guinea-Bissau",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "GY", "name": "Guyana", "isEu": false, "isSchengen": false },
+    { "code": "HT", "name": "Haiti", "isEu": false, "isSchengen": false },
+    {
+      "code": "HN",
+      "name": "Honduras, Republic of",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "HK", "name": "Hong Kong", "isEu": false, "isSchengen": false },
+    { "code": "HU", "name": "Hungary", "isEu": true, "isSchengen": true },
+    { "code": "IS", "name": "Iceland", "isEu": true, "isSchengen": true },
+    { "code": "IN", "name": "India", "isEu": false, "isSchengen": false },
+    { "code": "ID", "name": "Indonesia", "isEu": false, "isSchengen": false },
+    { "code": "IR", "name": "Iran", "isEu": false, "isSchengen": false },
+    { "code": "IQ", "name": "Iraq", "isEu": false, "isSchengen": false },
+    { "code": "IE", "name": "Ireland", "isEu": true, "isSchengen": false },
+    { "code": "IL", "name": "Israel", "isEu": false, "isSchengen": false },
+    { "code": "IT", "name": "Italy", "isEu": true, "isSchengen": true },
+    { "code": "JM", "name": "Jamaica", "isEu": false, "isSchengen": false },
+    { "code": "JP", "name": "Japan", "isEu": false, "isSchengen": false },
+    { "code": "JO", "name": "Jordan", "isEu": false, "isSchengen": false },
+    { "code": "KZ", "name": "Kazakhstan", "isEu": false, "isSchengen": false },
+    { "code": "KE", "name": "Kenya", "isEu": false, "isSchengen": false },
+    { "code": "KI", "name": "Kiribati", "isEu": false, "isSchengen": false },
+    {
+      "code": "KP",
+      "name": "Korea, Democratic People\\\u0027s Republic of",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "KR",
+      "name": "Korea, Republic of",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "XK", "name": "Kosovo", "isEu": false, "isSchengen": false },
+    { "code": "KW", "name": "Kuwait", "isEu": false, "isSchengen": false },
+    { "code": "KG", "name": "Kyrgyzstan", "isEu": false, "isSchengen": false },
+    {
+      "code": "LA",
+      "name": "Lao People\\\u0027s Democratic Republic",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "LV", "name": "Latvia", "isEu": true, "isSchengen": true },
+    { "code": "LB", "name": "Lebanon", "isEu": false, "isSchengen": false },
+    { "code": "LS", "name": "Lesotho", "isEu": false, "isSchengen": false },
+    { "code": "LR", "name": "Liberia", "isEu": false, "isSchengen": false },
+    { "code": "LY", "name": "Libya", "isEu": false, "isSchengen": false },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "isEu": false,
+      "isSchengen": true
+    },
+    { "code": "LT", "name": "Lithuania", "isEu": true, "isSchengen": true },
+    { "code": "LU", "name": "Luxembourg", "isEu": true, "isSchengen": true },
+    { "code": "MO", "name": "Macao", "isEu": false, "isSchengen": false },
+    { "code": "MK", "name": "Macedonia", "isEu": false, "isSchengen": false },
+    { "code": "MG", "name": "Madagascar", "isEu": false, "isSchengen": false },
+    { "code": "MW", "name": "Malawi", "isEu": false, "isSchengen": false },
+    { "code": "MY", "name": "Malaysia", "isEu": false, "isSchengen": false },
+    { "code": "MV", "name": "Maldives", "isEu": false, "isSchengen": false },
+    { "code": "ML", "name": "Mali", "isEu": false, "isSchengen": false },
+    { "code": "MT", "name": "Malta", "isEu": true, "isSchengen": true },
+    {
+      "code": "MH",
+      "name": "Marshall Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "MQ", "name": "Martinique", "isEu": false, "isSchengen": false },
+    { "code": "MR", "name": "Mauritania", "isEu": false, "isSchengen": false },
+    { "code": "MU", "name": "Mauritius", "isEu": false, "isSchengen": false },
+    { "code": "YT", "name": "Mayotte", "isEu": false, "isSchengen": false },
+    { "code": "MX", "name": "Mexico", "isEu": false, "isSchengen": false },
+    { "code": "FM", "name": "Micronesia", "isEu": false, "isSchengen": false },
+    { "code": "MD", "name": "Moldova", "isEu": false, "isSchengen": false },
+    { "code": "MC", "name": "Monaco", "isEu": false, "isSchengen": false },
+    { "code": "MN", "name": "Mongolia", "isEu": false, "isSchengen": false },
+    { "code": "ME", "name": "Montenegro", "isEu": false, "isSchengen": false },
+    { "code": "MS", "name": "Montserrat", "isEu": false, "isSchengen": false },
+    { "code": "MA", "name": "Morocco", "isEu": false, "isSchengen": false },
+    { "code": "MZ", "name": "Mozambique", "isEu": false, "isSchengen": false },
+    {
+      "code": "MM",
+      "name": "Myanmar (Burma)",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "NA", "name": "Namibia", "isEu": false, "isSchengen": false },
+    { "code": "NR", "name": "Nauru", "isEu": false, "isSchengen": false },
+    { "code": "NP", "name": "Nepal", "isEu": false, "isSchengen": false },
+    { "code": "NL", "name": "Netherlands", "isEu": true, "isSchengen": true },
+    {
+      "code": "NC",
+      "name": "New Caledonia",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "NZ", "name": "New Zealand", "isEu": false, "isSchengen": false },
+    { "code": "NI", "name": "Nicaragua", "isEu": false, "isSchengen": false },
+    { "code": "NE", "name": "Niger", "isEu": false, "isSchengen": false },
+    { "code": "NG", "name": "Nigeria", "isEu": false, "isSchengen": false },
+    { "code": "NU", "name": "Niue", "isEu": false, "isSchengen": false },
+    {
+      "code": "NF",
+      "name": "Norfolk Island",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "MP",
+      "name": "Northern Mariana Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "NO", "name": "Norway", "isEu": true, "isSchengen": true },
+    { "code": "OM", "name": "Oman", "isEu": false, "isSchengen": false },
+    { "code": "PK", "name": "Pakistan", "isEu": false, "isSchengen": false },
+    { "code": "PW", "name": "Palau", "isEu": false, "isSchengen": false },
+    {
+      "code": "PS",
+      "name": "Palestinian Territory, Occupied",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "PA", "name": "Panama", "isEu": false, "isSchengen": false },
+    {
+      "code": "PG",
+      "name": "Papua New Guinea",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "PY", "name": "Paraguay", "isEu": false, "isSchengen": false },
+    { "code": "PE", "name": "Peru", "isEu": false, "isSchengen": false },
+    { "code": "PH", "name": "Philippines", "isEu": false, "isSchengen": false },
+    { "code": "PL", "name": "Poland", "isEu": true, "isSchengen": true },
+    { "code": "PT", "name": "Portugal", "isEu": true, "isSchengen": true },
+    { "code": "PR", "name": "Puerto Rico", "isEu": false, "isSchengen": false },
+    { "code": "QA", "name": "Qatar", "isEu": false, "isSchengen": false },
+    { "code": "RE", "name": "Réunion", "isEu": false, "isSchengen": false },
+    { "code": "RO", "name": "Romania", "isEu": true, "isSchengen": false },
+    { "code": "RU", "name": "Russia", "isEu": false, "isSchengen": false },
+    { "code": "RW", "name": "Rwanda", "isEu": false, "isSchengen": false },
+    {
+      "code": "BL",
+      "name": "Saint Barthelemy",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "SH",
+      "name": "Saint Helena, Ascension and Tristan da Cunha",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "KN",
+      "name": "Saint Kitts and Nevis",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "LC", "name": "Saint Lucia", "isEu": false, "isSchengen": false },
+    {
+      "code": "MF",
+      "name": "Saint Martin",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "PM",
+      "name": "Saint Pierre and Miquelon",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "VC",
+      "name": "Saint Vincent and Grenadines",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "WS", "name": "Samoa", "isEu": false, "isSchengen": false },
+    { "code": "SM", "name": "San Marino", "isEu": false, "isSchengen": false },
+    {
+      "code": "ST",
+      "name": "Sao Tome and Principe",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "SN", "name": "Senegal", "isEu": false, "isSchengen": false },
+    { "code": "RS", "name": "Serbia", "isEu": false, "isSchengen": false },
+    { "code": "SC", "name": "Seychelles", "isEu": false, "isSchengen": false },
+    {
+      "code": "SL",
+      "name": "Sierra Leone",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "SG", "name": "Singapore", "isEu": false, "isSchengen": false },
+    { "code": "SK", "name": "Slovakia", "isEu": true, "isSchengen": true },
+    { "code": "SI", "name": "Slovenia", "isEu": true, "isSchengen": true },
+    {
+      "code": "SB",
+      "name": "Solomon Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "SO", "name": "Somalia", "isEu": false, "isSchengen": false },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "ES", "name": "Spain", "isEu": true, "isSchengen": true },
+    { "code": "LK", "name": "Sri Lanka", "isEu": false, "isSchengen": false },
+    { "code": "SD", "name": "Sudan", "isEu": false, "isSchengen": false },
+    { "code": "SR", "name": "Suriname", "isEu": false, "isSchengen": false },
+    {
+      "code": "SJ",
+      "name": "Svalbard and Jan Mayen",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "SZ", "name": "Swaziland", "isEu": false, "isSchengen": false },
+    { "code": "SE", "name": "Sweden", "isEu": true, "isSchengen": true },
+    { "code": "CH", "name": "Switzerland", "isEu": true, "isSchengen": true },
+    { "code": "SY", "name": "Syria", "isEu": false, "isSchengen": false },
+    { "code": "TW", "name": "Taiwan", "isEu": false, "isSchengen": false },
+    { "code": "TJ", "name": "Tajikistan", "isEu": false, "isSchengen": false },
+    { "code": "TZ", "name": "Tanzania", "isEu": false, "isSchengen": false },
+    { "code": "TH", "name": "Thailand", "isEu": false, "isSchengen": false },
+    { "code": "TL", "name": "Timor-Leste", "isEu": false, "isSchengen": false },
+    { "code": "TG", "name": "Togo", "isEu": false, "isSchengen": false },
+    { "code": "TO", "name": "Tonga", "isEu": false, "isSchengen": false },
+    {
+      "code": "TT",
+      "name": "Trinidad and Tobago",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "TN", "name": "Tunisia", "isEu": false, "isSchengen": false },
+    { "code": "TR", "name": "Turkey", "isEu": false, "isSchengen": false },
+    {
+      "code": "TM",
+      "name": "Turkmenistan",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "TC",
+      "name": "Turks and Caicos Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "TV", "name": "Tuvalu", "isEu": false, "isSchengen": false },
+    { "code": "UG", "name": "Uganda", "isEu": false, "isSchengen": false },
+    { "code": "UA", "name": "Ukraine", "isEu": false, "isSchengen": false },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "isEu": true,
+      "isSchengen": false
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "UM",
+      "name": "United States Minor Outlying Islands",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "UY", "name": "Uruguay", "isEu": false, "isSchengen": false },
+    { "code": "UZ", "name": "Uzbekistan", "isEu": false, "isSchengen": false },
+    { "code": "VU", "name": "Vanuatu", "isEu": false, "isSchengen": false },
+    {
+      "code": "VA",
+      "name": "Vatican City State",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "VE", "name": "Venezuela", "isEu": false, "isSchengen": false },
+    { "code": "VN", "name": "Vietnam", "isEu": false, "isSchengen": false },
+    {
+      "code": "VG",
+      "name": "Virgin Islands, British",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "VI",
+      "name": "Virgin Islands, U.S.",
+      "isEu": false,
+      "isSchengen": false
+    },
+    {
+      "code": "WF",
+      "name": "Wallis and Futuna",
+      "isEu": false,
+      "isSchengen": false
+    },
+    { "code": "YE", "name": "Yemen", "isEu": false, "isSchengen": false },
+    { "code": "ZM", "name": "Zambia", "isEu": false, "isSchengen": false },
+    { "code": "ZW", "name": "Zimbabwe", "isEu": false, "isSchengen": false }
+  ],
+  "javascript": null
+}
